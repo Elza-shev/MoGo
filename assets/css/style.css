@@ -135,9 +135,13 @@ h1, h2, h3, h3, h5, h6 {
     color: #fce38a;
 }
 
-.nav_link:hover:after {
-    display: block;
+.nav_link:hover:after,
+.nav_link.active:after{
     opacity: 1;
+}
+
+.nav_link.active {
+    color: #fce38a;
 }
 
 /* Button */
@@ -165,10 +169,16 @@ h1, h2, h3, h3, h5, h6 {
 
 /* Slider */
 .slider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.slider_inner {
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
-    margin-bottom: 10px;
 
 }
 
